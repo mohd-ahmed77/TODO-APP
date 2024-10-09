@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Modern Todo App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+    <!-- Add this HTML -->
+<!-- At the start of your body tag -->
+
+
+
+<style>
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Header Styles */
+    header {
+        background: rgba(0, 0, 0, 0.3);
+        padding: 1.5rem;
+        text-align: center;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        background: linear-gradient(45deg, #00f2fe, #4facfe);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0;
+    }
+
+    /* Main content wrapper to make footer stick to bottom */
+    .main-content {
+        flex: 1;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    /* Footer Styles */
+    footer {
+        background: rgba(0, 0, 0, 0.3);
+        padding: 1rem;
+        text-align: center;
+        margin-top: auto;
+    }
+
+    footer p {
+        color: #fff;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    footer span {
+        background: linear-gradient(45deg, #00f2fe, #4facfe);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
+</style>
+<header>
+    <h1>TODO APP</h1>
+</header>
+
+    <div class="container">
+        <h1>Todo List</h1>
+        <div class="input-group">
+            <input type="text" placeholder="Enter your task...">
+            <button>Add Task</button>
+        </div>
+        <ul>
+            <!-- Tasks will be added here -->
+        </ul>
+    </div>
+    <footer>
+        <p>Made with ❤️ by <span>Ahmed</span></p>
+    </footer>
+    
+
+  <script src="./script.js"></script>
+</body>
+</html>
